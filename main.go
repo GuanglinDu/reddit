@@ -19,7 +19,7 @@ func main() {
 	}
 
 	if resp.StatusCode != http.StatusOK {
-		log.Fatal(res.StatusOK)
+		log.Fatal(resp.StatusOK)
 	}
 
 	_, err = io.Copy(os.Stdout, resp.Body)
