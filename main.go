@@ -13,7 +13,7 @@ import (
 )
 
 func main() {
-	resp, err := http.Get("http://reddit.com/r/golang.json")
+	resp, err := http.Get("https://reddit.com/r/golang.json")
 	if err != nil {
 		log.Fatal(err)
 	}
